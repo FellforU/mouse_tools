@@ -13,12 +13,9 @@ cmd = [
     '--windowed',
     '--onefile',
     '--clean',
-    '--noconfirm'
+    '--noconfirm',
+    '--icon=mouse.ico'
 ]
-
-# 如果有图标文件，添加图标
-if os.path.exists('mouse.ico'):
-    cmd.append('--icon=mouse.ico')
 
 # 如果有说明文档，添加文档
 if os.path.exists('README.txt'):

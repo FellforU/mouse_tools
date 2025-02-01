@@ -16,6 +16,12 @@ class MouseApp:
         self.root.title("XCC的鼠小侠")
         self.root.geometry("500x600")
         
+        # 设置窗口图标
+        try:
+            self.root.iconbitmap('mouse.ico')  # 添加这行来设置窗口图标
+        except:
+            pass  # 如果图标文件不存在，就使用默认图标
+        
         # 初始化全局变量
         self.is_clicking = False
         self.click_thread = None

@@ -24,3 +24,9 @@ XCC的鼠小侠
 1. 首次运行会自动创建recordings和macros文件夹
 2. 建议仅用于测试和学习用途
 3. 在某些游戏中使用可能违反规则 
+
+打包：
+pip install pyinstaller
+然后执行 build_exe.py
+或者
+pyinstaller example_usage.py --name="XCC的鼠小侠" --windowed --onefile --clean --noconfirm
